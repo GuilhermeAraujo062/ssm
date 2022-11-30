@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nerko+One&display=swap');
+
+/* Mobile First */
+
+:root {
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-titulo: 'Nerko One', cursive;
+
+    --cor-verde: #54957b;
+    --cor-verde-escuro: #2b493d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte-texto);
+}
+
+main {
+    position: relative;
+    height: 100vh;   
+}
+
+.telefone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/background-pills.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 10rem;
+    margin-top: 40px;
+    color: var(--cor-verde);
+    text-shadow: 2px 2px 2px var(--cor-verde-escuro);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.campo {
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-verde-escuro);
+    background-color: var(--cor-verde-escuro);
+}
+
+.emoji {
+    width: 30px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.dado {
+    width: calc(100% - 45px);
+    height: 40px;
+    transform: translateY(-4px);
+    font-size: 1rem;
+    text-indent: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+::placeholder {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--cor-verde-escuro);
+}
+
+.btn {
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--cor-verde-escuro);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.185);
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--cor-verde);
+}
+
+.backup {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: var(--cor-verde-escuro);
+    text-decoration: none;
+}
+
+.backup:hover {
+    text-decoration: underline;
+}
+
+.cadastro {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--cor-verde-escuro);
+    text-decoration: none;
+}
+
+.cadastro a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.637);
+}
+
+.cadastro a:hover {
+    text-decoration: underline;
+}
