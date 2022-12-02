@@ -1,11 +1,12 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat&family=Nerko+One&display=swap');
 
 /* Mobile First */
 
 :root {
     --fonte-texto: 'Montserrat', sans-serif;
     --fonte-titulo: 'Nerko One', cursive;
+    --fonte-titulo2: 'Lilita One', cursive;
 
     --cor-verde: #54957b;
     --cor-verde-escuro: #2b493d;

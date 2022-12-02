@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat&family=Nerko+One&display=swap');
+
+:root {
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-titulo: 'Nerko One', cursive;
+    --fonte-titulo2: 'Lilita One', cursive;
+
+    --cor-verde: #54957b;
+    --cor-verde-escuro: #2b493d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte-texto);
+}
+
+main {
+    position: relative;
+    height: 100vh;   
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/background-pills.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.titulo {
+    font-family: var(--fonte-titulo2);
+    font-weight: 400;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 2px var(--cor-verde-escuro);
+    margin-top: 30%;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.campo {
+    width: 60vw;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-verde-escuro);
+    text-indent: 10px;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--cor-verde-escuro);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--cor-verde);
+}
+
+.seta {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+
+.voltar {
+    font-size: 1.3rem;
+    margin-top: 30%;
+}
+
+.voltar a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px var(--cor-verde-escuro);
+}
+
+.voltar a:hover {
+    text-decoration: underline;
+}
